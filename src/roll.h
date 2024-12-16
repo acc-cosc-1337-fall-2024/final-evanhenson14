@@ -6,14 +6,14 @@
 
 class Roll {
 public:
-    Roll(Die& d1, Die& d2); // Constructor with two Die references
-    void roll_dice();       // Rolls both dice
-    int roll_value() const; // Returns the rolled value
+    Roll(Die& d1, Die& d2); 
+    void roll_dice();     
+    int roll_value() const; 
 
 private:
-    Die& die1;             // Reference to the first die
-    Die& die2;             // Reference to the second die
-    int rolled_value{0};   // Sum of both dice rolls
+    Die& die1;             
+    Die& die2;             
+    int rolled_value{0};   
 };
 
-#endif // ROLL_H
+#endif 

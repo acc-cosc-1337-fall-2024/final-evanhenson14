@@ -7,12 +7,11 @@
 
 class Shooter {
 public:
-    Roll* throw_dice(Die& die1, Die& die2); // Create a dynamic Roll, roll dice, and store it.
-    void display_rolled_values() const;    // Display all rolled values.
-    ~Shooter();                            // Destructor to clean up memory.
+    Roll* throw_dice(Die& die1, Die& die2); 
+    void display_rolled_values() const;    
+    ~Shooter();                          
 
 private:
-    std::vector<Roll*> rolls; // Vector to store pointers to dynamically allocated Roll objects.
-};
+    std::vector<Roll*> rolls; 
 
 #endif // SHOOTER_H
